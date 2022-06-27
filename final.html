@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Statista - The Statistics Portal for Market Data, Market Research and Market Studies</title>
+    <meta name="Statista" content="The Statistics Portal for Market Data, Market Research and Market Studies">
+
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="wrapper__grid">
+                <a href="#">
+                    <img src="/img/statistaLogo1.png" class="logo" alt="Statista logo" />
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content__text">
+                <h1>Working at Statista</h1>
+                <p>
+                    Statista is one of the world’s leading statistics portals.
+                </p>
+                <p>
+                    As a multiple award-winning innovative digital company, Statista
+                    provides customers such as Google, Bloomberg, Forbes, Procter &
+                    Gamble, or Porsche with high-quality research & analysis, data
+                    intelligence, and content marketing products and services.
+                </p>
+                <p>
+                    With 900 employees from over 57 nations and 12 subsidiaries in
+                    Europe, North America, and Asia, Statista derives its innovative
+                    energy from its internationality and diversity.
+                </p>
+                <p>
+                    Statista provides a company culture based around learning by
+                    doing and entrepreneurship, offers great career opportunities,
+                    and combines the pioneering spirit of a start-up with the
+                    stability of an established company.
+                </p>
+            </div>
+            <div class="content__list">
+                <!-- FuzzBuzz list goes here -->
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrapper__grid">
+                <p>
+                    The Statista Product & IT team appreciates your interest and effort and wishes
+                    good luck!
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let ul = document.createElement("ul");
+
+        for (i = 1; i <= 100; i++) {
+            let message = '';
+
+            if (i % 3 === 0) message += 'Fizz';
+            if (i % 5 === 0) message += 'Buzz';
+
+            let li = document.createElement('li');
+            li.textContent = message || i;
+            ul.appendChild(li);
+        }
+
+        document.querySelector(".content__list").appendChild(ul);
+    </script>
+</body>
+
+</html>
